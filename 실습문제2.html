@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_실습 문제</title>
+</head>
+<body>
+    <h3>switch문으로 변환</h3>
+    <p>
+        아래 script를 switch문으로 변환한다. 
+    </p>
+    <p>
+        function checkBrowser(browser) {
+            if (browser == 'Edge') {
+                alert("Edge를 사용하고 계시네요!");
+            } else if (browser == 'Chrome'
+                || browser == 'Firefox'
+                || browser == 'Safari'
+                || browser == 'Opera') {
+                alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+            } else {
+                alert('현재 페이지가 괜찮아 보이길 바랍니다!');
+            }
+        }
+    </p> 
+
+    <script>
+       
+       let browser = prompt("현재 사용하는 browser가 무엇인가요?")
+
+     
+        
+            switch(browser) {
+            case 'Edge' : 
+            alert("Edge를 사용하고 계시네요!");
+            break;
+        
+            case 'Chrome' : 
+            alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+            break;
+        
+            case 'Firefox' : 
+            alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+            break;
+
+            case 'Safari' : 
+            alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+            break;
+
+            case 'Opera' : 
+            alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+            break;
+
+            default : 
+            alert('현재 페이지가 괜찮아 보이길 바랍니다!');
+        }
+        
+      
+       
+       
+       
+
+
+    </script>
+
+</body>
+</html>

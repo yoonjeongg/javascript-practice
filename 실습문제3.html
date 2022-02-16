@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_ 실습문제</title>
+</head>
+<body>
+    <h3>반복문</h3>
+    <p>
+        아래의 for문(forLoop 함수)을 while(whileLoop 함수)문으로 변경한다.
+    </p>
+
+    <p>
+        function forLoop (num){
+            for (let i = 0; i < num; i++) {
+                console.log('number' + (i+1));
+            }
+        }
+        forLoop(prompt("반복할 횟수 입력해주세요"));
+    </p>
+
+    <p>
+    "반드시 짝수를 입력하세요" 라는 prompt 출력 후
+    사용자가 짝수가 아닌 값을 입력한 경우 반복문을 사용해 동일한 prompt 창 출력한다.
+    사용자가 짝수를 입력하거나 취소 버튼을 누른 경우, 
+    혹은 아무것도 입력하지 않고 확인 버튼을 누른 경우엔 prompt 창 출력을 반복하지 않고
+    입력 받은 값 console로 출력한다.
+    </p>
+    
+    
+    <script>
+ 
+    let i = prompt('반드시 짝수를 입력해주세요');
+
+
+    if(i % 2 !=0) {
+        
+        let num = prompt("반복할 횟수 입력해주세요");
+
+        for (let i = 0; i < num; i++) {
+            console.log('number' + (i+1));
+        }
+        
+    } else {
+        console.log(i);
+    }
+    </script>
+</body>
+</html>
